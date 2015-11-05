@@ -291,7 +291,7 @@ function cleanUpNextTick(){draining=!1,currentQueue.length?queue=currentQueue.co
 },{}],97:[function(require,module,exports){
 module.exports={
   "name": "smooch-core",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Javascript wrapper for Smooch API",
   "homepage": "https://smooch.io",
   "main": "lib/wrappers/node.js",
@@ -299,7 +299,7 @@ module.exports={
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test-setup.js ./tests/**/*.spec.js",
     "test-ci": "MOCHA_FILE=$CIRCLE_TEST_REPORTS/test-results.xml mocha --compilers js:babel-core/register -R mocha-junit-reporter --require ./test-setup.js ./tests/**/*.spec.js",
-    "build": "babel -d lib/ src/ && npm run browserify:dist",
+    "build": "mkdir -p lib && rm -rf lib/* && babel -d lib/ src/ && npm run browserify:dist",
     "browserify:dev": "mkdir -p amd && browserify -g uglifyify -e lib/smooch.js -s SmoochCore -o amd/smooch-core.js",
     "browserify:dist": "npm run browserify:dev && uglifyjs amd/smooch-core.js -c -o amd/smooch-core.min.js --screw-ie8",
     "release": "release"
