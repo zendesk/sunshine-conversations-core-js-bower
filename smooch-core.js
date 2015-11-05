@@ -291,7 +291,7 @@ function cleanUpNextTick(){draining=!1,currentQueue.length?queue=currentQueue.co
 },{}],97:[function(require,module,exports){
 module.exports={
   "name": "smooch-core",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Javascript wrapper for Smooch API",
   "homepage": "https://smooch.io",
   "main": "lib/wrappers/node.js",
@@ -330,6 +330,7 @@ module.exports={
     "uglifyify": "^3.0.1"
   },
   "dependencies": {
+    "babel-runtime": "^6.0.14",
     "isomorphic-fetch": "^2.2.0",
     "jsonwebtoken": "^5.4.1",
     "urljoin": "^0.1.5"
