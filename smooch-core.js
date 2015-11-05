@@ -291,7 +291,7 @@ function cleanUpNextTick(){draining=!1,currentQueue.length?queue=currentQueue.co
 },{}],97:[function(require,module,exports){
 module.exports={
   "name": "smooch-core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Javascript wrapper for Smooch API",
   "homepage": "https://smooch.io",
   "main": "lib/wrappers/node.js",
