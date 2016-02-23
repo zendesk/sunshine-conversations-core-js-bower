@@ -280,7 +280,7 @@ function cleanUpNextTick(){draining=!1,currentQueue.length?queue=currentQueue.co
 },{}],94:[function(require,module,exports){
 module.exports={
   "name": "smooch-core",
-  "version": "0.0.15",
+  "version": "1.0.0",
   "description": "Javascript wrapper for Smooch API",
   "homepage": "https://smooch.io",
   "main": "lib/wrappers/node.js",
@@ -297,7 +297,7 @@ module.exports={
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:lemieux/smooch-core-js.git"
+    "url": "git@github.com:smooch/smooch-core-js.git"
   },
   "devDependencies": {
     "babel": "^6.1.18",
@@ -324,7 +324,7 @@ module.exports={
     "jsonwebtoken": "^5.4.1"
   },
   "release-script": {
-    "bowerRepo": "git@github.com:lemieux/smooch-core-js-bower.git"
+    "bowerRepo": "git@github.com:smooch/smooch-core-js-bower.git"
   }
 }
 
