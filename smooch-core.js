@@ -44,7 +44,7 @@ require("whatwg-fetch"),module.exports=self.fetch.bind(self);
 },{}],15:[function(require,module,exports){
 module.exports={
   "name": "smooch-core",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Javascript wrapper for Smooch API",
   "homepage": "https://smooch.io",
   "main": "lib/wrappers/node.js",
